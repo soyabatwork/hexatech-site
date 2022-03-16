@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .quote-card {
+    @apply bg-slate-50 p-4 shadow-md text-blue-primary md:-mt-10  w-96 mx-auto;
+  }
+
+  .btn {
+    @apply px-3 py-1 rounded-lg shadow-xl;
+  }
+}
+.embla {
+  overflow-x: scroll;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.embla__slide {
+  flex: 0 0 100%;
 }
