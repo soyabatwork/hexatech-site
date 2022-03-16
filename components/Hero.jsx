@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { FaWpexplorer } from "react-icons/fa";
-// import HeroBackground from "../public/assets/image 2.png";
+import HeroBackground from "../public/assets/HeroBg.png";
+
+const HeroContainer = styled.div`
+  background-image: url(${HeroBackground.src});
+`;
 
 const Hero = () => {
   return (
-    <div className="-mt-20 bg-hero-pattern bg-cover origin-center overflow-x-hidden bg-fixed">
+    <HeroContainer className="-mt-20 bg-cover origin-center overflow-x-hidden bg-fixed">
       <div className="container mx-auto flex items-center justify-center py-10  text-gray-50  h-screen md:ml-52">
         <div className="text-center md:text-left p-1 flex flex-col -mt-20 max-w-xs">
           <div className="text-3xl">
@@ -21,7 +25,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </HeroContainer>
   );
 };
 
