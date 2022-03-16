@@ -1,42 +1,50 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import HexaLogo from "../public/assets/svg/logo.svg";
+import HexaLogo from "../public/assets/svg/logo-dark.svg";
 
 const Footer = () => {
   return (
-    <div>
-      {/* logo */}
-      <div
-        className="h-12 -mt-5 -translate-y-1/4 scale-125
-      mb-3"
-      >
-        <Image height="100" width="100" src={HexaLogo} />
+    <div className="mt-5 ">
+      <div className="container mx-auto flex flex-col items-center">
+        {/* logo */}
+        <div
+          className="h-12 scale-125
+        mb-5 block"
+        >
+          <Image height="100" width="100" src={HexaLogo} />
+        </div>
+        <div className="space-y-5 p-3">
+          {/* contact */}
+          <div>
+            <h6>Contact</h6>
+            <p>
+              Address: House- 616, Road- 08, Avenue- 06, Mirpur DOHS, Dhaka-
+              1216
+            </p>
+          </div>
+          {/* sitemap */}
+          <div className="flex flex-col items-center">
+            <Link href="/">Home</Link>
+            <Link href="/">About</Link>
+            <Link href="/">Portfolio</Link>
+            <Link href="/">Blog</Link>
+            <Link href="/">Contact</Link>
+          </div>
+          {/* links */}
+          <div className="flex flex-col items-center">
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Services Overview</Link>
+            <Link href="/">Graphic Design/Branding</Link>
+            <Link href="/">Website Design</Link>
+            <Link href="/">Website Development</Link>
+            <Link href="/">Search Engine Optimization(SEO)</Link>
+            <Link href="/">Maintanence &amp; Support</Link>
+          </div>
+        </div>
       </div>
-      <div>
-        {/* contact */}
-        <div>
-          <h6>Contact</h6>
-          <p>
-            Address: House- 616, Road- 08, Avenue- 06, Mirpur DOHS, Dhaka- 1216
-          </p>
-        </div>
-        {/* sitemap */}
-        <div>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Portfolio</a>
-          <a href="/">Blog</a>
-          <a href="/">Contact</a>
-        </div>
-        {/* links */}
-        <div>
-          <a href="/">Privacy Policy</a>
-          <a href="/">Services Overview</a>
-          <a href="/">Graphic Design/Branding</a>
-          <a href="/">Website Design</a>
-          <a href="/">Website Development</a>
-          <a href="/">Search Engine Optimization(SEO)</a>
-          <a href="/">Maintanence &amp; Support</a>
-        </div>
+      <div className="text-center bg-blue-primary text-gray-50 py-3">
+        &copy; 2022 Hexatech solutions
       </div>
     </div>
   );

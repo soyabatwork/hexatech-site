@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HeroContact from "../components/HeroContact";
@@ -20,6 +21,7 @@ export default function Home() {
       <HomeTemplates />
       <HeroSupport />
       <HeroContact />
+      <Footer />
     </div>
   );
 }
