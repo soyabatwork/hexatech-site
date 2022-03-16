@@ -11,7 +11,7 @@ const HeroSupportContainer = styled.div`
 
 const HeroSupport = () => {
   return (
-    <HeroSupportContainer className="mt-5 text-gray-50 bg-fixed	 bg-cover bg-no-repeat bg-center px-3 py-10">
+    <HeroSupportContainer className="bg-gradient-to-br from-[#276D92]  to-[#2B79A2] mt-5 text-gray-50 bg-fixed	 bg-cover bg-no-repeat bg-center px-3 py-10">
       <div className="container mx-auto md:flex space-y-3 justify-between ">
         <div className="flex gap-2 flex-col items-center text-xl ">
           <BiSupport className="text-4xl" />
