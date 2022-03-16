@@ -31,7 +31,9 @@ const HomeFullStack = () => {
         </p>
         <div className="space-x-3">
           <button className="btn bg-slate-50">Explore our process</button>
-          <button className="btn bg-green-primary">Request a quote</button>
+          <button className="btn bg-green-primary mt-2 md:mt-0">
+            Request a quote
+          </button>
         </div>
       </div>
     </FullStackContainer>

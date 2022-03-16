@@ -5,16 +5,13 @@ import HexaLogo from "../public/assets/svg/logo-dark.svg";
 
 const Footer = () => {
   return (
-    <div className="mt-5 ">
-      <div className="container mx-auto flex flex-col items-center">
+    <div className="mt-5">
+      <div className="container mx-auto flex flex-col ">
         {/* logo */}
-        <div
-          className="h-12 scale-125
-        mb-5 block"
-        >
+        <div className="h-12 ">
           <Image height="100" width="100" src={HexaLogo} />
         </div>
-        <div className="space-y-5 p-3">
+        <div className="space-y-5 p-3 md:flex justify-between flex-grow items-center">
           {/* contact */}
           <div>
             <h6>Contact</h6>
