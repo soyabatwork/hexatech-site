@@ -10,14 +10,14 @@ const HeroContainer = styled.div`
 
 const Hero = () => {
   return (
-    <HeroContainer className="-mt-20 bg-cover origin-center overflow-x-hidden bg-fixed">
+    <HeroContainer className=" bg-cover origin-center overflow-x-hidden bg-fixed -mt-20">
       <div className="container mx-auto flex items-center justify-center py-10  text-gray-50  h-screen md:ml-52">
         <motion.div
-          animate={{ scale: 1.1, delay: 0 }}
-          className="scale-75 text-center md:text-left p-1 flex flex-col -mt-20 max-w-xs"
+          animate={{ opacity: 1, delay: "1000" }}
+          className="scale-75 text-center md:text-left p-1 flex flex-col mt-20 max-w-xs opacity-60"
         >
           <div className="text-3xl">
-            We offer a wide range of customizable
+            We offer a wide range of customizable{" "}
             <span className="whitespace-nowrap text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
               IT services
             </span>

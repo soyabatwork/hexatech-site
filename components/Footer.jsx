@@ -5,7 +5,7 @@ import HexaLogo from "../public/assets/svg/logo-dark.svg";
 
 const Footer = () => {
   return (
-    <div className="mt-5 text-gray-900">
+    <div className="mt-5 text-[#333]">
       <div className="container mx-auto flex flex-col ">
         {/* logo */}
         <div className="h-12 self-center md:self-start scale-125">
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="space-y-5 p-3 md:flex justify-between flex-grow items-center">
           {/* contact */}
           <div className="text-center md:text-left pt-5">
-            <h6>Contact</h6>
+            <h6 className="font-extrabold mt-5 md:mt-0">Contact</h6>
             <p>
               Address: House- 616, Road- 08, Avenue- 06, Mirpur DOHS, Dhaka-
               1216

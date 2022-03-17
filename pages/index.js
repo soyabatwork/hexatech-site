@@ -7,12 +7,14 @@ import HomeDesignProcess from "../components/HomeDesignProcess";
 import HomeFullStack from "../components/HomeFullStack";
 import HomeOfferings from "../components/HomeOfferings";
 import HomeTemplates from "../components/HomeTemplates";
+
 import QuotesSection from "../components/QuotesSection";
 
 export default function Home() {
   return (
-    <div className="bg-gray-50">
-      <Header />
+    <div className="bg-gray-50 relative">
+      {/* mobile nav */}
+
       <Hero />
       <QuotesSection />
       <HomeOfferings />
@@ -21,7 +23,6 @@ export default function Home() {
       <HomeTemplates />
       <HeroSupport />
       <HeroContact />
-      <Footer />
     </div>
   );
 }
