@@ -17,9 +17,11 @@ const HomeFullStack = () => {
           prog ressive web apps (PWAs) to personalized customer experience
           platforms.
         </p>
-        <div className="space-x-3">
-          <button className="btn bg-slate-50">Explore our process</button>
-          <button className="btn bg-green-primary mt-2 md:mt-0">
+        <div className="md:space-x-3 ">
+          <button className="btn bg-slate-50 inline">
+            Explore our process
+          </button>
+          <button className="btn bg-green-primary mt-2 md:mt-0 inline ml-1">
             Request a quote
           </button>
         </div>

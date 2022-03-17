@@ -8,9 +8,16 @@
   .quote-card {
     @apply bg-slate-50 p-4 shadow-md text-blue-primary md:-mt-10 w-72  md:w-96 mx-auto;
   }
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary;
+  }
+
+  .bg-primary-gradient {
+    @apply bg-gradient-to-bl from-[#276D92] to-[#2B79A2];
+  }
 
   .btn {
-    @apply px-3 py-1 rounded-lg shadow-xl;
+    @apply px-3 py-1 rounded-lg flex shadow-lg gap-2 items-center hover:gap-4 transition-all;
   }
 }
 .embla {

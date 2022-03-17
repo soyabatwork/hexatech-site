@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { RiMenu4Fill } from "react-icons/ri";
 import styled from "styled-components";
@@ -11,7 +12,7 @@ const MobileNav = styled.div`
   top: 0;
 `;
 
-const navSections = ["Services", "Our works", "Contact us", "Our company"];
+const navSections = ["Services", "Our works", "Contact us", "About"];
 
 const Drawer = (props) => {
   const handleOpen = () => {
@@ -24,14 +25,14 @@ const Drawer = (props) => {
       className={`bg-gray-900 md:hidden ${props.open ? "" : "hidden"}`}
     >
       <RiMenu4Fill
-        className="text-gray-50 text-3xl z-30 float-right mr-3 mt-3"
+        className="text-gray-50 text-3xl z-30 float-right mt-4 mr-9"
         onClick={handleOpen}
       />
-      <div className="text-center space-y-8 mt-20">
+      <div className="space-y-8 mt-36 flex flex-col items-center text-gray-50">
         {navSections.map((item, i) => (
-          <a key={i} className="text-gray-50 block">
-            {item}
-          </a>
+          <Link href={item} key={i}>
+            <a onClick={handleOpen}>{item}</a>
+          </Link>
         ))}
       </div>
     </MobileNav>

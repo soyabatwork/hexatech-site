@@ -12,9 +12,7 @@ import QuotesSection from "../components/QuotesSection";
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 relative">
-      {/* mobile nav */}
-
+    <div className="bg-gray-50">
       <Hero />
       <QuotesSection />
       <HomeOfferings />

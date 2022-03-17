@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { TiSocialInstagramCircular } from "react-icons/ti";
 import HexaLogo from "../public/assets/svg/logo-dark.svg";
 
 const Footer = () => {
@@ -38,6 +41,24 @@ const Footer = () => {
             <Link href="/">Search Engine Optimization(SEO)</Link>
             <Link href="/">Maintanence &amp; Support</Link>
           </div>
+        </div>
+        {/* social media links */}
+        <h3 className=" pl-3 text-center md:text-left">
+          Follow us on social media
+        </h3>
+        <div className="flex space-x-2 pl-3 justify-center md:justify-start py-3 cursor-pointer text-3xl text-blue-primary ">
+          <Link href="https://www.facebook.com/HexatecHsolutionsbd">
+            <FaFacebook />
+          </Link>
+          <Link href="/">
+            <AiFillTwitterCircle />
+          </Link>
+          <Link href="/">
+            <TiSocialInstagramCircular />
+          </Link>
+          <Link href="/">
+            <FaLinkedinIn />
+          </Link>
         </div>
       </div>
       <div className="text-center bg-blue-primary text-gray-50 py-3">

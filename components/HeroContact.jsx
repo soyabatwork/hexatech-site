@@ -57,7 +57,7 @@ const HeroContact = () => {
             <span>Get in touch</span>
             <span>
               <a href="mailto:contact@acceleratebs.com">
-                E-mail:contact@acceleratebs.com
+                Email: info@hexatechsolutions.xyz
               </a>
             </span>
             <span>

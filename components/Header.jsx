@@ -18,11 +18,18 @@ const Header = (props) => {
   };
 
   return (
-    <div className="pb-5 fixed top-0 z-10 w-full bg-gray-800/50">
-      <div className="container mx-auto ">
-        <div className="flex items-center justify-between pt-3">
-          <div className="h-12 -mt-10 z-20">
-            <Image height="100" width="100" src={HexaLogo} />
+    <div className="pb-5 fixed top-0 z-10 w-full bg-gray-800/50 ">
+      <div>
+        <div className="h-6 pt-5 flex items-center justify-between px-9 pb-5 ">
+          <div className="pt-5">
+            <Link href="/" className="   z-20">
+              <Image
+                height="100"
+                width="100"
+                src={HexaLogo}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
           <div className="hidden gap-3 mt-3 md:flex z-20 text-gray-50">
             {navSections.map((item, i) => (
@@ -36,7 +43,7 @@ const Header = (props) => {
             xxxxxxxxxx
           </div>
           <RiMenu4Fill
-            className="text-gray-50 mr-3 text-3xl z-50 md:hidden"
+            className="text-gray-50 text-3xl z-50 md:hidden cursor-pointer mt-6"
             onClick={handleOpen}
           />
         </div>
