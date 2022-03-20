@@ -61,8 +61,7 @@ const HeroContact = () => {
               </a>
             </span>
             <span>
-              <a href="tel:+91 98206 18832">tel:+91 98206 18832</a>
-              <a href="tel:+91 99201 44416">tel:+91 99201 44416</a>
+              <a href="tel:+8801748708868">tel:+8801748708868</a>
             </span>
           </p>
         </div>
@@ -71,8 +70,8 @@ const HeroContact = () => {
           <p className="flex flex-col justify-center items-center  z-10">
             Join the team
             <span>
-              <a href="mailto:hr@acceleratebs.com">
-                E-mail:hr@acceleratebs.com
+              <a href="mailto:info@hexatechsolutions.xyz">
+                E-mail:hr@hexatechsolutions.xyz
               </a>
             </span>
           </p>

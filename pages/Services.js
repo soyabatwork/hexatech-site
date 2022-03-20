@@ -111,7 +111,7 @@ const Services = () => {
         </div>
       </div>
       <div className=" bg-primary-gradient">
-        <div className="container mx-auto space-y-5 py-10 px-3">
+        <div className="container mx-auto space-y-5 py-10 px-3 md:grid grid-cols-2 gap-5">
           {ServiceContent.map((content, i) => {
             return (
               <div

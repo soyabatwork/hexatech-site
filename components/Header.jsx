@@ -1,7 +1,7 @@
 import React from "react";
 0;
 
-const navSections = ["Services", "Our works", "Contact us", "Our company"];
+const navSections = ["Services", "Our works", "Contact us", "About"];
 import Image from "next/image";
 import HexaLogo from "../public/assets/svg/logo.svg";
 

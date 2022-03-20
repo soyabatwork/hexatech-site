@@ -16,12 +16,15 @@ const Footer = () => {
         </div>
         <div className="space-y-5 p-3 md:flex justify-between flex-grow items-center">
           {/* contact */}
-          <div className="text-center md:text-left pt-5">
-            <h6 className="font-extrabold mt-5 md:mt-0">Contact</h6>
+          <div className="text-center md:text-left pt-5 text-gray-900">
+            <h6 className="font-extrabold mt-5 md:mt-0 tracking-wider">
+              Contact
+            </h6>
             <p>
               Address: House- 616, Road- 08, Avenue- 06, Mirpur DOHS, Dhaka-
               1216
             </p>
+            <a href="tel:+8801748708868">tel: +8801748708868</a>
           </div>
           {/* sitemap */}
           <div className="flex flex-col items-center underline">
