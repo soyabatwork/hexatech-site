@@ -112,9 +112,12 @@ const Services = () => {
       </div>
       <div className=" bg-primary-gradient">
         <div className="container mx-auto space-y-5 py-10 px-3">
-          {ServiceContent.map((content) => {
+          {ServiceContent.map((content, i) => {
             return (
-              <div className="p-6 bg-gray-50/90 rounded-tl-3xl rounded-br-3xl  text-gray-600">
+              <div
+                key={i}
+                className="p-6 bg-gray-50/90 rounded-tl-3xl rounded-br-3xl  text-gray-600"
+              >
                 <h3 className="gradient-text text-2xl">{content.title}</h3>
                 <h6>{content.subtitle}</h6>
                 <p className="text-lg my-3">{content.content}</p>
