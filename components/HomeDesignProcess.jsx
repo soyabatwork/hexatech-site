@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import { Fade } from "react-reveal";
 
 import styled from "styled-components";
 
@@ -67,43 +68,49 @@ const ProcessItem = styled.div`
 const HomeDesignProcess = () => {
   return (
     <div className="bg-gradient-to-br from-[#276D92]  to-[#2B79A2]">
-      <div className="container mx-auto px-5 py-10">
-        <div className="text-center">
-          <h1 className="text-center text-2xl font-bold text-gray-50 mb-2">
-            Our Design Process
-          </h1>
-          <h2 className="text-center tracking-wider font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary mb-10">
-            Deliver Only Exceptional Quality and Improvement!
-          </h2>
-        </div>
-        <div className="md:flex flex-row-reverse gap-10">
+      <div className="container px-5 py-10 mx-auto">
+        <Fade up>
+          <div className="text-center">
+            <h1 className="mb-2 text-2xl font-bold text-center text-gray-50">
+              Our Design Process
+            </h1>
+            <h2 className="mb-10 font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
+              Deliver Only Exceptional Quality and Improvement!
+            </h2>
+          </div>
+        </Fade>
+        <div className="flex-row-reverse gap-10 md:flex">
           <div>
             {contents.map((item, i) => {
               return (
-                <ProcessItem key={i} className="text-gray-50">
-                  <BsFillArrowDownCircleFill />
-                  <h6 className="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
-                    {item.title}
-                  </h6>
-                  <p>{item.details}</p>
-                </ProcessItem>
+                <Fade up>
+                  <ProcessItem key={i} className="text-gray-50">
+                    <BsFillArrowDownCircleFill />
+                    <h6 className="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
+                      {item.title}
+                    </h6>
+                    <p>{item.details}</p>
+                  </ProcessItem>
+                </Fade>
               );
             })}
           </div>
-          <div className="flex flex-col justify-center items-center my-5 text-gray-50 self-start">
-            <Image height="300" width="350" src={ProcessImage} />
-            <h4 className="my-3">
-              Our core focus is to provide quality services enabling our clients
-              to focus on their core business. Ready to start your next project?
-              Drop us a line or two at:
-            </h4>
-            <a
-              className="text-green-primary px-3 py-1 bg-blue-900 bg-opacity-60 rounded-lg"
-              href="mailto: support@hexatechsolutios.net"
-            >
-              support@hexatechsolutios.xyz
-            </a>
-          </div>
+          <Fade up>
+            <div className="flex flex-col items-center self-start justify-center my-5 text-gray-50">
+              <Image height="300" width="350" src={ProcessImage} />
+              <h4 className="my-3">
+                Our core focus is to provide quality services enabling our
+                clients to focus on their core business. Ready to start your
+                next project? Drop us a line or two at:
+              </h4>
+              <a
+                className="px-3 py-1 bg-blue-900 rounded-lg text-green-primary bg-opacity-60"
+                href="mailto: support@hexatechsolutios.net"
+              >
+                support@hexatechsolutios.xyz
+              </a>
+            </div>
+          </Fade>
         </div>
       </div>
     </div>

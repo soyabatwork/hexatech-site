@@ -2,8 +2,16 @@ import Link from "next/link";
 import React from "react";
 import { RiMenu4Fill } from "react-icons/ri";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const MobileNav = styled.div`
+const variants = {
+  open: { opacity: 1, y: 0 },
+  closed: { opacity: 0, y: -1000 },
+  exit: { opacity: 0, y: -1000 },
+  transition: { type: "tween", duration: 3 },
+};
+
+const MobileNav = styled(motion.div)`
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -16,19 +24,22 @@ const navSections = ["Services", "Our works", "Contact us", "About"];
 
 const Drawer = (props) => {
   const handleOpen = () => {
-    console.log("clicked");
     props.onClick(!props.open);
   };
 
   return (
     <MobileNav
-      className={`bg-gray-900 md:hidden ${props.open ? "" : "hidden"}`}
+      variants={variants}
+      initial={false}
+      exit="exit"
+      animate={props.open ? "open" : "closed"}
+      className={`bg-gray-900 md:hidden `}
     >
       <RiMenu4Fill
-        className="text-gray-50 text-3xl z-30 float-right mt-4 mr-9"
+        className="z-30 float-right mt-4 text-3xl text-gray-50 mr-9"
         onClick={handleOpen}
       />
-      <div className="space-y-8 mt-36 flex flex-col items-center text-gray-50">
+      <div className="flex flex-col items-center space-y-8 mt-36 text-gray-50">
         {navSections.map((item, i) => (
           <Link href={item} key={i}>
             <a onClick={handleOpen}>{item}</a>

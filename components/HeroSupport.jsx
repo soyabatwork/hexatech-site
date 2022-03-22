@@ -4,6 +4,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { GiBackwardTime } from "react-icons/gi";
 import styled from "styled-components";
 import SupportBg from "../public/assets/performance-bg.png";
+import { Fade } from "react-reveal";
 
 const HeroSupportContainer = styled.div`
   background-image: url(${SupportBg.src});
@@ -12,19 +13,25 @@ const HeroSupportContainer = styled.div`
 const HeroSupport = () => {
   return (
     <HeroSupportContainer className="bg-gradient-to-br from-[#276D92]  to-[#2B79A2] mt-5 text-gray-50 bg-fixed	 bg-cover bg-no-repeat bg-center px-3 py-10">
-      <div className="container mx-auto md:flex space-y-3 justify-between ">
-        <div className="flex gap-2 flex-col items-center text-xl ">
-          <BiSupport className="text-4xl" />
-          <p>Unlimited Revisions</p>
-        </div>
-        <div className="flex gap-2 flex-col items-center text-xl">
-          <RiTeamFill className="text-4xl" />
-          <p>Active Support Team</p>
-        </div>
-        <div className="flex gap-2 flex-col items-center text-xl">
-          <GiBackwardTime className="text-4xl" />
-          <p>Money-Back Guarantee</p>
-        </div>
+      <div className="container justify-between mx-auto space-y-3 md:flex ">
+        <Fade up>
+          <div className="flex flex-col items-center gap-2 text-xl ">
+            <BiSupport className="text-4xl" />
+            <p>Unlimited Revisions</p>
+          </div>
+        </Fade>
+        <Fade up>
+          <div className="flex flex-col items-center gap-2 text-xl">
+            <RiTeamFill className="text-4xl" />
+            <p>Active Support Team</p>
+          </div>
+        </Fade>
+        <Fade up>
+          <div className="flex flex-col items-center gap-2 text-xl">
+            <GiBackwardTime className="text-4xl" />
+            <p>Money-Back Guarantee</p>
+          </div>
+        </Fade>
       </div>
     </HeroSupportContainer>
   );

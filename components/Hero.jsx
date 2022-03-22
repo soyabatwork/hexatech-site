@@ -8,22 +8,30 @@ const HeroContainer = styled.div`
   background-image: url(${HeroBackground.src});
 `;
 
+const heroTextVariants = {
+  initial: { opacity: 0, y: -10 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  transition: { type: "tween", duration: 2 },
+};
+
 const Hero = () => {
   return (
-    <HeroContainer className=" bg-cover origin-center overflow-x-hidden bg-fixed -mt-20">
-      <div className="container mx-auto flex items-center justify-center py-10  text-gray-50  h-screen md:ml-52">
+    <HeroContainer className="-mt-20 overflow-x-hidden origin-center bg-fixed bg-cover ">
+      <div className="container flex items-center justify-center h-screen py-10 mx-auto text-gray-50 md:ml-52">
         <motion.div
-          animate={{ opacity: 1, delay: "1000" }}
-          className="scale-75 text-center md:text-left p-1 flex flex-col mt-20 max-w-xs opacity-60"
+          variants={heroTextVariants}
+          initial="initial"
+          animate="animate"
+          className="flex flex-col max-w-xs p-1 mt-20 text-center scale-75 md:text-left opacity-60"
         >
           <div className="text-3xl">
             We offer a wide range of customizable{" "}
-            <span className="whitespace-nowrap text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
+            <span className="text-4xl font-extrabold text-transparent whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
               IT services
             </span>
           </div>
           <p>IT Solutions that will help you save time and money.</p>
-          <button className="self-center md:self-start px-5 py-2 gap-1 flex justify-center items-center bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg shadow-lg shadow-gray-300/60 hover:shadow-gray-100 mt-5 transition-all">
+          <button className="flex items-center self-center justify-center gap-1 px-5 py-2 mt-5 transition-all rounded-lg shadow-lg md:self-start bg-gradient-to-r from-blue-900 to-blue-800 shadow-gray-300/60 hover:shadow-gray-100">
             Explore <FaWpexplorer />
           </button>
         </motion.div>
