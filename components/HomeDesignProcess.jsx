@@ -83,8 +83,8 @@ const HomeDesignProcess = () => {
           <div>
             {contents.map((item, i) => {
               return (
-                <Fade up>
-                  <ProcessItem key={i} className="text-gray-50">
+                <Fade up key={i}>
+                  <ProcessItem className="text-gray-50">
                     <BsFillArrowDownCircleFill />
                     <h6 className="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
                       {item.title}
