@@ -12,7 +12,7 @@ const PostList = () => {
   }, []);
 
   const renderedPostsList = posts?.map((post) => {
-    return <h3>{post.title}</h3>;
+    return <h3 key={i}>{post.title}</h3>;
   });
 
   return <div className="p-5 mt-3 bg-gray-50">{renderedPostsList}</div>;

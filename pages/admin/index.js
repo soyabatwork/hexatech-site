@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FileBase64 from "react-file-base64";
 import PostList from "../../components/admin/PostList";
 
-const index = () => {
+const Index = () => {
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -57,4 +57,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
