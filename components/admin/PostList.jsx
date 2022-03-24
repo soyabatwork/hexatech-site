@@ -11,7 +11,7 @@ const PostList = () => {
     getPosts();
   }, []);
 
-  const renderedPostsList = posts?.map((post) => {
+  const renderedPostsList = posts?.map((post, i) => {
     return <h3 key={i}>{post.title}</h3>;
   });
 
