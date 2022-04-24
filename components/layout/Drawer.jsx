@@ -36,7 +36,7 @@ const Drawer = (props) => {
       className={`bg-gray-900 md:hidden `}
     >
       <RiMenu4Fill
-        className="z-30 float-right mt-4 text-3xl text-gray-50 mr-9"
+        className="z-30 float-right mt-6 text-3xl text-gray-50 mr-9"
         onClick={handleOpen}
       />
       <div className="flex flex-col items-center space-y-8 mt-36 text-gray-50">

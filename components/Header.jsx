@@ -42,7 +42,7 @@ const Header = (props) => {
             01748708868
           </div>
           <RiMenu4Fill
-            className="z-50 mt-6 text-3xl cursor-pointer text-gray-50 md:hidden"
+            className="z-50 mt-3 text-3xl cursor-pointer text-gray-50 md:hidden"
             onClick={handleOpen}
           />
         </div>
