@@ -5,7 +5,7 @@ import { Fade, Zoom } from "react-reveal";
 const HomeFullStack = () => {
   return (
     <div className="bg-gradient-to-bl from-[#276D92] to-[#2B79A2] relative ">
-      <div className="container px-10 py-10 mx-auto space-y-10">
+      <div className="container max-w-5xl px-4 py-16 mx-auto space-y-10">
         <Fade up>
           <h2 className="mb-10 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
             Expert Full-stack Web Development Company
@@ -22,7 +22,7 @@ const HomeFullStack = () => {
             experience platforms.
           </p>
         </Fade>
-        <Zoom top>
+        <Zoom>
           <div className="md:space-x-3 ">
             <button className="inline btn bg-slate-50">
               Explore our process

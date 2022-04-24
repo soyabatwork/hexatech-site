@@ -88,9 +88,9 @@ const Services = () => {
       <div>
         <ServiceImage />
       </div>
-      <div className="-mt-3 bg-primary-gradient text-white">
-        <div className="container px-4 space-y-3 mx-auto py-10">
-          <div className="-mt-20 h-20 w-20 relative">
+      <div className="-mt-3 text-white bg-primary-gradient">
+        <div className="container px-4 py-10 mx-auto space-y-3">
+          <div className="relative w-20 h-20 -mt-20">
             <Image layout="fill" src={ServiceIcon} />
           </div>
           <p className="tracking-widest">
@@ -111,19 +111,22 @@ const Services = () => {
         </div>
       </div>
       <div className=" bg-primary-gradient">
-        <div className="container mx-auto space-y-5 py-10 px-3 md:grid grid-cols-2 gap-5">
+        <div className="container grid-cols-2 gap-5 px-3 py-10 mx-auto space-y-5 md:grid">
           {ServiceContent.map((content, i) => {
             return (
               <div
                 key={i}
-                className="p-6 bg-gray-50/90 rounded-tl-3xl rounded-br-3xl  text-gray-600"
+                className="p-6 text-gray-600 bg-gray-50/90 rounded-tl-3xl rounded-br-3xl"
               >
-                <h3 className="gradient-text text-2xl">{content.title}</h3>
+                <h3 className="text-2xl gradient-text">{content.title}</h3>
                 <h6>{content.subtitle}</h6>
-                <p className="text-lg my-3">{content.content}</p>
-                <button className="btn bg-green-primary">
+                <p className="my-3 text-lg">{content.content}</p>
+
+                {/* button grayed out due to no content */}
+
+                {/* <button className="btn bg-green-primary">
                   Learn more <BsChevronDoubleRight />
-                </button>
+                </button> */}
               </div>
             );
           })}

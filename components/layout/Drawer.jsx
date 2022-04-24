@@ -20,14 +20,7 @@ const MobileNav = styled(motion.div)`
   top: 0;
 `;
 
-const navSections = [
-  "Services",
-  "Our works",
-  "Contact us",
-  "About",
-  "Updates",
-  "Login",
-];
+const navSections = ["Services", "Our works", "Contact us", "About"];
 
 const Drawer = (props) => {
   const handleOpen = () => {

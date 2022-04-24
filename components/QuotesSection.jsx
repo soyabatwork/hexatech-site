@@ -19,8 +19,8 @@ const QuoteContainer = styled.div`
 
 const QuotesSection = () => {
   return (
-    <QuoteContainer className="px-2 ">
-      <div className="container pb-10 mx-auto ">
+    <QuoteContainer className="">
+      <div className="container max-w-5xl pb-10 mx-auto">
         <div className="flex flex-col justify-center gap-3 mb-10 md:flex-row ">
           <Fade up>
             <div className="-mt-10 quote-card">

@@ -30,7 +30,7 @@ const Hero = () => {
           className={`flex flex-col max-w-xs p-1 mt-20 text-center scale-75 md:text-left opacity-60`}
         >
           <div className="text-3xl">
-            We offer a wide range of customizable
+            We offer a wide range of customizable {""}
             <span className="text-4xl font-extrabold text-transparent whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-primary to-green-primary">
               IT services
             </span>

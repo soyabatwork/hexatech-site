@@ -1,7 +1,7 @@
 import React from "react";
 0;
 
-const navSections = ["Services", "Our works", "Contact us", "About", "Updates"];
+const navSections = ["Services", "Our works", "Contact us", "About"];
 import Image from "next/image";
 import HexaLogo from "../public/assets/svg/logo.svg";
 
@@ -16,12 +16,13 @@ const Header = (props) => {
   };
 
   return (
-    <div className="fixed top-0 z-10 w-full pb-5 bg-gray-800/50 ">
+    <div className="fixed top-0 z-10 w-full py-3 bg-gray-800/50 ">
       <div>
-        <div className="flex items-center justify-between h-6 pt-5 pb-5 px-9 ">
+        <div className="flex items-center justify-between h-12 px-9">
           <div className="pt-5">
-            <Link href="/" className="z-20 ">
+            <Link href="/" className="z-20" passHref>
               <Image
+                alt="hero-image"
                 height="100"
                 width="100"
                 src={HexaLogo}
@@ -29,16 +30,16 @@ const Header = (props) => {
               />
             </Link>
           </div>
-          <div className="z-20 hidden gap-3 mt-3 md:flex text-gray-50">
+          <div className="z-20 hidden gap-3 mt-3 text-xl tracking-wide md:flex text-gray-50">
             {navSections.map((item, i) => (
               <Link href={`/${item}`} key={i}>
                 {item}
               </Link>
             ))}
           </div>
-          <div className="z-20 items-center justify-center hidden gap-1 p-1 mt-3 border-2 md:flex border-green-primary rounded-2xl text-gray-50">
+          <div className="z-20 items-center justify-center hidden gap-1 p-1 tracking-wider border-2 md:flex border-green-primary rounded-2xl text-gray-50">
             <BiPhone />
-            xxxxxxxxxx
+            01748708868
           </div>
           <RiMenu4Fill
             className="z-50 mt-6 text-3xl cursor-pointer text-gray-50 md:hidden"

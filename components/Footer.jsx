@@ -9,15 +9,15 @@ import HexaLogo from "../public/assets/svg/logo-dark.svg";
 const Footer = () => {
   return (
     <div className="mt-5 text-[#333]">
-      <div className="container mx-auto flex flex-col ">
+      <div className="container flex flex-col max-w-5xl mx-auto ">
         {/* logo */}
-        <div className="h-12 self-center md:self-start scale-125">
+        <div className="self-center h-12 scale-125 md:self-start">
           <Image height="100" width="100" src={HexaLogo} />
         </div>
-        <div className="space-y-5 p-3 md:flex justify-between flex-grow items-center">
+        <div className="items-center justify-between flex-grow p-3 space-y-5 md:flex">
           {/* contact */}
-          <div className="text-center md:text-left pt-5 text-gray-900">
-            <h6 className="font-extrabold mt-5 md:mt-0 tracking-wider">
+          <div className="pt-5 text-center text-gray-900 md:text-left">
+            <h6 className="mt-5 font-extrabold tracking-wider md:mt-0">
               Contact
             </h6>
             <p>
@@ -46,10 +46,10 @@ const Footer = () => {
           </div>
         </div>
         {/* social media links */}
-        <h3 className=" pl-3 text-center md:text-left">
+        <h3 className="pl-3 text-center  md:text-left">
           Follow us on social media
         </h3>
-        <div className="flex space-x-2 pl-3 justify-center md:justify-start py-3 cursor-pointer text-3xl text-blue-primary ">
+        <div className="flex justify-center py-3 pl-3 space-x-2 text-3xl cursor-pointer md:justify-start text-blue-primary ">
           <Link href="https://www.facebook.com/HexatecHsolutionsbd">
             <FaFacebook />
           </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="text-center bg-blue-primary text-gray-50 py-3">
+      <div className="py-3 text-center bg-blue-primary text-gray-50">
         &copy; 2022 Hexatech solutions
       </div>
     </div>
