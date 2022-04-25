@@ -48,14 +48,14 @@ const About = () => {
   return (
     <div>
       <AboutMainContainer>
-        <div className="z-10 p-5 bg-gray-200/80 w-full">
+        <div className="z-10 w-full p-5 bg-gray-200/80">
           <p className="tracking-widest text-gray-700">WE ARE MENTORMATE</p>
           <h4 className="text-4xl text-blue-primary">Your Trusted Guide</h4>
         </div>
       </AboutMainContainer>
       <div className="bg-primary-gradient">
-        <div className="py-10 px-3 text-gray-100 space-y-3">
-          <h5 className="tracking-widest  text-green-primary">
+        <div className="px-3 py-10 space-y-3 text-gray-100">
+          <h5 className="tracking-widest text-green-primary">
             WHERE WE’VE BEEN
           </h5>
           <p>
@@ -68,17 +68,17 @@ const About = () => {
           </p>
         </div>
         {/* mission and vision */}
-        <div className="flex space-x-2 px-3 text-gray-700">
-          <div className="bg-green-primary rounded-md p-5 ">
-            <p className="text-3xl mb-3">Vision</p>
+        <div className="flex px-3 space-x-2 text-gray-700">
+          <div className="p-5 rounded-md bg-green-primary ">
+            <p className="mb-3 text-3xl">Vision</p>
             <p>
               To represent Bangladesh’s IT products and services globally, and
               make a name as one of the top fortune 500 IT Companies in the
               world.
             </p>
           </div>
-          <div className="bg-green-primary rounded-md p-5">
-            <p className="text-3xl mb-3">Mission</p>
+          <div className="p-5 rounded-md bg-green-primary">
+            <p className="mb-3 text-3xl">Mission</p>
             <p>
               “Hexatech solutions” is an IT company whose target is to provide
               complete IT solutions creatively and uniquely designed for our
@@ -88,11 +88,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="px-3 text-gray-100 space-y-3 py-10">
-          <h5 className="tracking-widest  text-green-primary">
+        <div className="px-3 py-10 space-y-3 text-gray-100">
+          <h5 className="tracking-widest text-green-primary">
             WHERE WE’RE GOING
           </h5>
-          <h5 className="tracking-widest  text-blue-primary text-2xl font-bold">
+          <h5 className="text-2xl font-bold tracking-widest text-blue-primary">
             We’re building the next generation of technologists.
           </h5>
           <p>
@@ -117,7 +117,13 @@ const About = () => {
         </div>
       </div>
       <AboutBodyContainer>
-        <Image className="z-10" width="300" height="300" src={HexaLogo.src} />
+        <Image
+          className="z-10"
+          width="300"
+          height="300"
+          src={HexaLogo.src}
+          alt="logo"
+        />
       </AboutBodyContainer>
     </div>
   );

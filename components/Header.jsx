@@ -1,7 +1,12 @@
 import React from "react";
 0;
 
-const navSections = ["Services", "Our works", "Contact us", "About"];
+const navSections = [
+  { name: "Services", link: "services" },
+  { name: "Our works", link: "our-works" },
+  { name: "Contact us", link: "contact-us" },
+  { name: "About", link: "about" },
+];
 import Image from "next/image";
 import HexaLogo from "../public/assets/svg/logo.svg";
 
@@ -16,7 +21,7 @@ const Header = (props) => {
   };
 
   return (
-    <div className="fixed top-0 z-10 w-full py-3 bg-gray-800/50 ">
+    <div className="fixed top-0 z-10 w-full py-3 bg-gray-800/50 backdrop-blur-xl">
       <div>
         <div className="flex items-center justify-between h-12 px-9">
           <div className="pt-5">
@@ -32,8 +37,8 @@ const Header = (props) => {
           </div>
           <div className="z-20 hidden gap-3 mt-3 text-xl tracking-wide md:flex text-gray-50">
             {navSections.map((item, i) => (
-              <Link href={`/${item}`} key={i}>
-                {item}
+              <Link href={`/${item.link}`} key={i}>
+                {item.name}
               </Link>
             ))}
           </div>

@@ -5,10 +5,9 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const variants = {
-  open: { opacity: 1, y: 0 },
+  open: { opacity: 1, y: 0, transition: { type: "tween" } },
   closed: { opacity: 0, y: -1000 },
   exit: { opacity: 0, y: -1000 },
-  transition: { type: "tween", duration: 3 },
 };
 
 const MobileNav = styled(motion.div)`
@@ -20,7 +19,12 @@ const MobileNav = styled(motion.div)`
   top: 0;
 `;
 
-const navSections = ["Services", "Our works", "Contact us", "About"];
+const navSections = [
+  { name: "Services", link: "services" },
+  { name: "Our works", link: "our-works" },
+  { name: "Contact us", link: "contact-us" },
+  { name: "About", link: "about" },
+];
 
 const Drawer = (props) => {
   const handleOpen = () => {
@@ -41,8 +45,8 @@ const Drawer = (props) => {
       />
       <div className="flex flex-col items-center space-y-8 mt-36 text-gray-50">
         {navSections.map((item, i) => (
-          <Link href={item} key={i}>
-            <a onClick={handleOpen}>{item}</a>
+          <Link href={item.link} key={i}>
+            <a onClick={handleOpen}>{item.name}</a>
           </Link>
         ))}
       </div>
