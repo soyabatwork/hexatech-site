@@ -14,46 +14,49 @@ const ContactPage = () => {
         <div className="space-y-4">
           <p className="font-light tracking-wide">Contact</p>
           <p className="text-5xl">We are here to help you level up</p>
-          <p className="text-xl font-light">
+        </div>
+
+        <div className="md:flex">
+          <p className="p-8 text-xl font-light basis-3/5">
             We&apos;re just one click away to help you take your brand or
             product from great to incredible. Fill in the form to share more
             details about your project. Or your favorite gum flavor. Either way,
             we&apos;d love to talk.
           </p>
+          <form className="flex flex-col gap-4 p-4 my-8 text-neutral-50 bg-blue-primary basis-2/5">
+            <label className="text-lg font-light" htmlFor="name">
+              Whats your name?
+            </label>
+            <input
+              type="text"
+              className="p-2 border-b-2 rounded-lg text-neutral-900 hover:bg-neutral-400 border-neutral-800"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label className="text-lg font-light" htmlFor="email">
+              Your email
+            </label>
+            <input
+              type="text"
+              className="p-2 border-b-2 rounded-lg text-neutral-900 hover:bg-neutral-400 border-neutral-800"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="text-lg font-light" htmlFor="name">
+              What can I help you with?
+            </label>
+            <textarea
+              placeholder="  What can I help you with?"
+              htmlFor="name"
+              className="p-2 border-b-2 rounded-lg text-neutral-900 hover:bg-neutral-400 border-neutral-800"
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+            />
+            <button className="inline-block px-6 py-3 font-normal tracking-wider transition-all bg-neutral-900 max-w-min rounded-2xl text-neutral-50 hover:shadow-xl">
+              Send
+            </button>
+          </form>
         </div>
-        <form className="flex flex-col gap-4 p-4 my-8 text-neutral-50 bg-blue-primary">
-          <label className="text-lg font-light" htmlFor="name">
-            Whats your name?
-          </label>
-          <input
-            type="text"
-            className="p-2 border-b-2 rounded-lg text-neutral-900 hover:bg-neutral-400 border-neutral-800"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label className="text-lg font-light" htmlFor="email">
-            Your email
-          </label>
-          <input
-            type="text"
-            className="p-2 border-b-2 rounded-lg text-neutral-900 hover:bg-neutral-400 border-neutral-800"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label className="text-lg font-light" htmlFor="name">
-            What can I help you with?
-          </label>
-          <textarea
-            placeholder="  What can I help you with?"
-            htmlFor="name"
-            className="p-2 border-b-2 rounded-lg text-neutral-900 hover:bg-neutral-400 border-neutral-800"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-          />
-          <button className="inline-block px-6 py-3 font-normal tracking-wider transition-all bg-neutral-900 max-w-min rounded-2xl text-neutral-50 hover:shadow-xl">
-            Send
-          </button>
-        </form>
 
         {/* contact form ends */}
 
