@@ -18,7 +18,7 @@ const PortfolioCarousel = ({ portfolio }) => {
               return (
                 <div
                   key={i}
-                  className="relative flex-grow-0 flex-shrink-0 mr-12 basis-4/5 md:basis-2/4 h-72 md:h-[400px] w-44 border-8 border-blue-200 shadow-2xl overflow-hidden rounded-2xl"
+                  className="relative flex-grow-0 flex-shrink-0 mr-12 overflow-hidden border-8 shadow-2xl basis-4/5 md:basis-2/4 h-96 md:h-[600px] w-44 border-blue-primary rounded-2xl"
                 >
                   <Image
                     src={image}
@@ -32,6 +32,7 @@ const PortfolioCarousel = ({ portfolio }) => {
           </div>
         </div>
       </div>
+      <div></div>
     </div>
   );
 };

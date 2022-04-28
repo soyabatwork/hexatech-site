@@ -17,13 +17,13 @@ const ContactPage = () => {
         </div>
 
         <div className="md:flex">
-          <p className="p-8 text-xl font-light basis-3/5">
+          <p className="p-8 text-xl font-light basis-2/5">
             We&apos;re just one click away to help you take your brand or
             product from great to incredible. Fill in the form to share more
             details about your project. Or your favorite gum flavor. Either way,
             we&apos;d love to talk.
           </p>
-          <form className="flex flex-col gap-4 p-4 my-8 text-neutral-50 bg-blue-primary basis-2/5">
+          <form className="flex flex-col gap-4 p-4 my-8 text-neutral-50 bg-blue-primary basis-3/5">
             <label className="text-lg font-light" htmlFor="name">
               Whats your name?
             </label>

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { portfolios } from "../lib/portfolioImports";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import PortfolioCarousel from "../components/PortfolioCarousel";
+import ReactPlayer from "react-player/lazy";
 import portfoliobg from "../public/assets/portfoliobg.jpg";
 
 const OurWorks = () => {
@@ -58,10 +57,34 @@ const OurWorks = () => {
           </button>
         </div>
       </div>
+      <div></div>
       <div className="my-8">
         {filtered?.map((p, i) => (
           <PortfolioCarousel key={i} portfolio={p} />
         ))}
+      </div>
+      <div className="overflow-hidden min-h-fit">
+        <iframe
+          className="h-[calc((100vw*9)/16)] mx-auto"
+          src="https://res.cloudinary.com/dkep7fc1a/video/upload/v1651127335/ezgif.com-gif-maker_2_ogm3bj.mp4"
+          frameBorder="0"
+          allow="autoplay"
+          autoPlay={1}
+          mute={1}
+          allowFullScreen
+        />
+      </div>
+      <p className="py-4 text-2xl text-center font-extralight">Baki koto</p>
+      <div className="overflow-hidden min-h-fit">
+        <iframe
+          className="h-[calc((100vw*9)/16)] mx-auto"
+          src="https://res.cloudinary.com/dkep7fc1a/video/upload/q_auto/v1651127118/Untitled_82_720p_okonqb.webm"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          autoPlay={1}
+          mute={1}
+          allowFullScreen
+        />
       </div>
     </div>
   );

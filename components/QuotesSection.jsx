@@ -53,11 +53,7 @@ const QuotesSection = () => {
             </div>
           </Fade>
         </div>
-        <p className="max-w-md mx-auto text-center text-gray-50">
-          We Are Privileged To Provide Support To More Than 70 Countries From
-          Asia, Africa And Latin America. We Are Now Entering The European
-          Market As Well.
-        </p>
+        <p className="max-w-md mx-auto text-center text-gray-50"></p>
       </div>
     </QuoteContainer>
   );
