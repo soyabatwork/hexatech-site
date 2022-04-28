@@ -8,7 +8,7 @@ const PortfolioCarousel = ({ portfolio }) => {
 
   return (
     <div>
-      <p className="mx-4 text-xl font-light tracking-wider text-center capitalize md:text-left">
+      <p className="mx-4 text-xl font-light tracking-wider text-center capitalize">
         {portfolio.name}
       </p>
       <div>
