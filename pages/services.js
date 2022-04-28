@@ -9,7 +9,7 @@ const ServiceContent = [
     title: "Web development & Design",
     subtitle: "Consistent Experience Across Platforms",
     content:
-      "We have a dynamic team of inspired perfectionists, who will design the look &amp; feel of your brand communication and your customers&aps; expedition in the digital space with unbeatable user experiences. In a progressively more competitive marketplace, making a very grand first impression is a must.",
+      "We have a dynamic team of inspired perfectionists, who will design the look &amp; feel of your brand communication and your customers' expedition in the digital space with unbeatable user experiences. In a progressively more competitive marketplace, making a very grand first impression is a must.",
   },
   {
     title: "Data Entry",
@@ -27,14 +27,14 @@ const ServiceContent = [
       "Existing in this excessive competitive market is achievable if you can work out and execute a marketing strategy that represents your exclusiveness and provides the clients a cause to choose you over competitors. Our specialists will build a strong stage for your business in Digital platforms so that you can achieve your highest success. In this Digital Era, no one can stay away from marketing their company at social sites and still promote and stock out their products. We tailor all your product needs and exposure to help you grow your business.",
   },
   {
-    title: "App Development &amp; Design",
+    title: "App Development and Design",
     content:
       "Discovering the right app development collaborator is very critical forward in the process. Knowing the technology pile, development tests and other technological parts are very hard to comprehend. It can be disconcerting for industrialists lacking tech settings. So, discover an app development associate like Hexatech Solutions that develops and designs your project proficiently and effortlessly.  Our specialist team offers a full set of mobile app development services. That contains the design and development of your mobile application from scrape to initiate. We propose addition, organization services and increase on demand. We also provide further maintenance and make the operation feel trouble-free and smooth.",
   },
   {
     title: "Software Development",
     content:
-      "We build up custom software constructions that put up with a bunch of information to generate, design, install and clinch software for the user’s favor. We build software&aps; s such human resources system, accounting system, payroll system, ERP system, attendance system, and various other required systems which will be customized as per you need. Our expert team gives custom software development services that equal your exact ambition. We make sure extremely modified software with rapidity and value that exacts your needs.",
+      "We build up custom software constructions that put up with a bunch of information to generate, design, install and clinch software for the user’s favor. We build software such as human resources system, accounting system, payroll system, ERP system, attendance system, and various other required systems which will be customized as per you need. Our expert team gives custom software development services that equal your exact ambition. We make sure extremely modified software with rapidity and value that exacts your needs.",
   },
 ];
 
