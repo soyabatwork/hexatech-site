@@ -54,7 +54,7 @@ const About = () => {
         </div>
       </AboutMainContainer>
       <div className="bg-primary-gradient">
-        <div className="px-3 py-10 space-y-3 text-gray-100">
+        <div className="container max-w-6xl px-3 py-10 mx-auto space-y-3 text-gray-100">
           <h5 className="tracking-widest text-green-primary">
             WHERE WE’VE BEEN
           </h5>
@@ -68,7 +68,7 @@ const About = () => {
           </p>
         </div>
         {/* mission and vision */}
-        <div className="flex px-3 space-x-2 text-gray-700">
+        <div className="container flex max-w-6xl px-3 mx-auto space-x-2 text-gray-700">
           <div className="p-5 rounded-md bg-green-primary ">
             <p className="mb-3 text-3xl">Vision</p>
             <p>
@@ -88,7 +88,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="px-3 py-10 space-y-3 text-gray-100">
+        <div className="container max-w-6xl px-3 py-10 mx-auto space-y-3 text-gray-100">
           <h5 className="tracking-widest text-green-primary">
             WHERE WE’RE GOING
           </h5>

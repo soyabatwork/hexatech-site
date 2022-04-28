@@ -54,9 +54,9 @@ const Services = () => {
         <ServiceImage />
       </div>
       <div className="-mt-3 text-white bg-primary-gradient">
-        <div className="container px-4 py-10 mx-auto space-y-3">
+        <div className="container max-w-xl px-4 py-10 mx-auto space-y-3">
           <div className="relative w-20 h-20 -mt-20">
-            <Image layout="fill" src={ServiceIcon} />
+            <Image alt="services" layout="fill" src={ServiceIcon} />
           </div>
           <p className="tracking-widest">
             TRANSFORM YOUR BUSINESS THROUGH TECHNOLOGY
@@ -76,7 +76,7 @@ const Services = () => {
         </div>
       </div>
       <div className=" bg-primary-gradient">
-        <div className="container grid-cols-2 gap-5 px-3 py-10 mx-auto space-y-5 md:grid">
+        <div className="container max-w-6xl grid-cols-2 gap-5 px-8 py-10 mx-auto space-y-5 md:grid">
           {ServiceContent.map((content, i) => {
             return (
               <div
@@ -85,7 +85,7 @@ const Services = () => {
               >
                 <h3 className="text-2xl gradient-text">{content.title}</h3>
                 <h6>{content.subtitle}</h6>
-                <p className="my-3 text-lg">{content.content}</p>
+                <p className="my-3">{content.content}</p>
 
                 {/* button grayed out due to no content */}
 
