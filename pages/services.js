@@ -9,17 +9,17 @@ const ServiceContent = [
     title: "Web development & Design",
     subtitle: "Consistent Experience Across Platforms",
     content:
-      "We have a dynamic team of inspired perfectionists, who will design the look &amp; feel of your brand communication and your customers&apos; expedition in the digital space with unbeatable user experiences. In a progressively more competitive marketplace, making a very grand first impression is a must.",
+      "We have a dynamic team of inspired perfectionists, who will design the look &amp; feel of your brand communication and your customers&aps; expedition in the digital space with unbeatable user experiences. In a progressively more competitive marketplace, making a very grand first impression is a must.",
   },
   {
     title: "Data Entry",
     content:
-      "VData entry is a work done in administrative place usually held in business offices. They assist various departments in the company by imputing the inside personal customer and account information into data spreadsheets. Data entry positions need a character with exceptional typing skills and proficiency in organizational and database software. Data entry employees keep information exact and well-thought-out. In Hexatech Solutions we believe to facilitate companies by reducing their in house work load by getting the job done by our skilled Data entry professionals.",
+      "Data entry is a work done in administrative place usually held in business offices. They assist various departments in the company by imputing the inside personal customer and account information into data spreadsheets. Data entry positions need a character with exceptional typing skills and proficiency in organizational and database software. Data entry employees keep information exact and well-thought-out. In Hexatech Solutions we believe to facilitate companies by reducing their in house work load by getting the job done by our skilled Data entry professionals.",
   },
   {
     title: "BPO (Business Process Outsourcing)",
     content:
-      "We built our first mobile app in 2001. Since then, we’ve helped thousands of companies connect with people wherever they are in the world. Our custom mobile and IoT solutions are used for everything from streamlining diabetes care to auto-steering tractors to tracking and sharing bike rides. We have experience integrating native and hybrid mobile apps with devices like smart sensors, medical equipment, thermal imaging cameras, building automation systems, tractors, and many others.",
+      "BPO is a business performance in which association contracts amid an exterior service source to execute a vital business task. Naturally, an organization initially identifies a procedure that is required for its actions yet is not part of its center value proposal in the market; this step needs a high-quality kind of development within the association and a well-built business procedure organization and this is where we come in. Our talented young generations of operators are highly efficient at helping you run your business as smooth as butter.",
   },
   {
     title: "Digital Marketing",
@@ -29,7 +29,12 @@ const ServiceContent = [
   {
     title: "App Development &amp; Design",
     content:
-      "SDiscovering the right app development collaborator is very critical forward in the process. Knowing the technology pile, development tests and other technological parts are very hard to comprehend. It can be disconcerting for industrialists lacking tech settings. So, discover an app development associate like Hexatech Solutions that develops and designs your project proficiently and effortlessly.  Our specialist team offers a full set of mobile app development services. That contains the design and development of your mobile application from scrape to initiate. We propose addition, organization services and increase on demand. We also provide further maintenance and make the operation feel",
+      "Discovering the right app development collaborator is very critical forward in the process. Knowing the technology pile, development tests and other technological parts are very hard to comprehend. It can be disconcerting for industrialists lacking tech settings. So, discover an app development associate like Hexatech Solutions that develops and designs your project proficiently and effortlessly.  Our specialist team offers a full set of mobile app development services. That contains the design and development of your mobile application from scrape to initiate. We propose addition, organization services and increase on demand. We also provide further maintenance and make the operation feel trouble-free and smooth.",
+  },
+  {
+    title: "Software Development",
+    content:
+      "We build up custom software constructions that put up with a bunch of information to generate, design, install and clinch software for the user’s favor. We build software&aps; s such human resources system, accounting system, payroll system, ERP system, attendance system, and various other required systems which will be customized as per you need. Our expert team gives custom software development services that equal your exact ambition. We make sure extremely modified software with rapidity and value that exacts your needs.",
   },
 ];
 

@@ -68,7 +68,7 @@ const ProcessItem = styled.div`
 const HomeDesignProcess = () => {
   return (
     <div className="bg-gradient-to-br from-[#276D92]  to-[#2B79A2]">
-      <div className="container max-w-5xl px-5 py-10 mx-auto px-4">
+      <div className="container max-w-5xl py-10 mx-auto px-4">
         <Fade up>
           <div className="text-center">
             <h1 className="mb-2 text-2xl font-bold text-center text-gray-50">
