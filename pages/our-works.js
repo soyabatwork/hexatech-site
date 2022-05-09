@@ -63,6 +63,7 @@ const OurWorks = () => {
           <PortfolioCarousel key={i} portfolio={p} />
         ))}
       </div>
+      <p className="py-4 text-2xl text-center font-extralight">Financial App</p>
       <div className="overflow-hidden min-h-fit">
         <iframe
           className="h-[calc((100vw*9)/16)] mx-auto"
@@ -74,7 +75,7 @@ const OurWorks = () => {
           allowFullScreen
         />
       </div>
-      <p className="py-4 text-2xl text-center font-extralight">Baki koto</p>
+      <p className="py-4 text-2xl text-center font-extralight">Baki koto App</p>
       <div className="overflow-hidden min-h-fit">
         <iframe
           className="h-[calc((100vw*9)/16)] mx-auto"

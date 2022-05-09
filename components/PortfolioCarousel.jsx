@@ -18,13 +18,13 @@ const PortfolioCarousel = ({ portfolio }) => {
               return (
                 <div
                   key={i}
-                  className="relative flex-grow-0 flex-shrink-0 mr-12 overflow-hidden border-8 shadow-2xl basis-4/5 md:basis-2/4 h-96 md:h-[600px] w-44 border-blue-primary rounded-2xl"
+                  className="relative flex-grow-0 flex-shrink-0 mr-12 overflow-hidden border-2 shadow-xl basis-4/5 md:basis-2/4 h-96 md:h-[600px] w-44 border-blue-primary rounded-2xl"
                 >
                   <Image
                     src={image}
                     alt={portfolio.name}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                   />
                 </div>
               );
